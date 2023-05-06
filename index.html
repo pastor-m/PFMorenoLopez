@@ -17,14 +17,27 @@
     <!-- Favicon -->
     <link rel="icon" href="images/mxswlogoonly.png">
 
+    <!-- Etiquetas SEO -->
+    <meta name="description" content="Bienvenido a MX keyboards, tienda de teclados mecanicos y todos los accesorios para tu teclado">
+    <meta name="keywords" content="Keyboards, teclados, keycaps, cables, custom, mechanical, mecanico, switches">
+
     <title>MX Keyboards</title>
 </head>
 <body>
+  <!-- Header -->
     <header class="d-flex justify-content-around">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid mx-5">
               <a class="navbar-brand" href="index.html">
-                <img src="images/mxswlogo2.png" alt="Logo">
+                <picture>
+                  <source 
+                     media="(min-width: 991px)"
+                     srcset="images/mxswlogo2.svg">
+                  <source 
+                     media="(max-width: 465px)"
+                     srcset="images/mxswlogoonly.svg">
+                  <img src="images/mxswlogo2.svg" width="300" height="75" class="d-inline-block align-text-top">
+               </picture>
               </a>
               <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,8 +56,7 @@
     </header>
 
     <main class="destacado">
-      
-        <!-- Carrousel de ofertas -->
+        <!-- Carrousel de destacados -->
         <h1 class="text-white">Inicio</h1>
         <div id="carouselExample" class="carousel slide container-fluid">
             <div class="carousel-inner">
@@ -68,6 +80,8 @@
             </button>
           </div>
     </main>
+
+    <!-- Seccion de ofertas -->
 
     <h2 class="text-white">Ofertas</h2>
 
@@ -97,7 +111,7 @@
             <p>$10.00</p>
         </div>
     </section>
-
+    <!-- Footer -->
     <footer>
       <nav>
         <ul class="d-flex my-3">
@@ -119,8 +133,6 @@
         </ul>
       </nav>
   </footer> 
-
-  
         <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

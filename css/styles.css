@@ -16,6 +16,7 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .nav-link,
@@ -51,7 +52,6 @@ footer {
   justify-content: start;
   width: 100%;
   text-decoration: none;
-  position: fixed;
   bottom: 0;
 }
 
@@ -95,6 +95,9 @@ footer {
   width: 21rem;
   border-radius: 20px;
 }
+.productos .card:hover {
+  transform: scale(1.05);
+}
 .productos .card img {
   width: 18.75rem;
   border-radius: 10px;
@@ -115,6 +118,7 @@ footer {
   align-items: center;
   justify-content: center;
   max-height: 100%;
+  margin-bottom: 4rem;
 }
 .nosotros img {
   width: 38rem;
