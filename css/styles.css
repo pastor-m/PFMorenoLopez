@@ -1,0 +1,133 @@
+/* Para que el gradiente no se repita en el fondo */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: "Bakbak One", cursive;
+  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(7, 82, 32) 59%, rgb(0, 94, 38) 100%);
+  color: white;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link,
+.navbar-nav .nav-link,
+li, p {
+  color: white;
+  list-style: none;
+}
+
+header {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+header a {
+  font-size: 1.875rem !important;
+}
+
+h1, h2, h4 {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: black;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+}
+
+.ofertas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 4rem;
+  gap: 3rem;
+}
+.ofertas img {
+  width: 25rem;
+  border-radius: 30px;
+}
+.ofertas p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.destacado img {
+  width: 50rem;
+  border-radius: 30px;
+}
+
+.productos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 4rem;
+  gap: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  gap: 3rem;
+}
+.productos .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(68, 68, 68);
+  padding: 1rem;
+  width: 21rem;
+  border-radius: 20px;
+}
+.productos .card img {
+  width: 18.75rem;
+  border-radius: 10px;
+  max-width: 100%;
+}
+.productos .card h4, .productos .card p {
+  font-size: 1.5rem;
+}
+.productos .card button {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.nosotros {
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+}
+.nosotros img {
+  width: 38rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.botonEnviar {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

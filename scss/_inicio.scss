@@ -1,0 +1,20 @@
+
+.ofertas {
+    @include flex-row;
+    img {
+        width: 25rem;  
+        border-radius: $radio-borde;
+    }
+
+    p {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+.destacado {
+    img {
+        width: 50rem;
+        border-radius: $radio-borde;
+    }
+}

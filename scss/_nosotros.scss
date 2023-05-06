@@ -1,0 +1,13 @@
+.nosotros {
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    img {
+        width: 38rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        border-radius: $radio-borde;
+    }
+}

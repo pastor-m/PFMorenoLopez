@@ -1,0 +1,66 @@
+// Paleta de colores
+$color-primario: #173f00;
+$color-secundario: white;
+$color-terciario: black;
+$color-card: rgb(68, 68, 68);
+$fondo: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(7,82,32,1) 59%, rgba(0,94,38,1) 100%);
+
+
+// Tamanos de fuentes
+$fuente-chica: 1rem;
+$fuente-media: 1.875rem;
+$fuente-grande: 2.5rem;
+$icono-chico: 40px;
+$icono-grande: 60px;
+
+// Resoluciones de pantallas
+$tablet: 758px;
+$desktop: 992px;
+$desktopG: 1200px;
+
+// Margenes
+$espacio-chico: 2rem;
+$espacio-xchico: 1rem;
+$espacio-medio: 3rem;
+$espacio-grande: 4rem;
+
+// Fuente
+$fuente-principal: 'Bakbak One', cursive;
+
+//Redondeo de imagen
+$radio-borde: 30px;
+
+// Mixins
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-fila-centrado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-fila-start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: $espacio-grande;
+    gap: $espacio-medio;
+}
+
+@mixin button-size {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+}

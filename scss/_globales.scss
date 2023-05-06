@@ -1,0 +1,53 @@
+/* Para que el gradiente no se repita en el fondo */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    font-family: $fuente-principal;
+    background: $fondo;
+    color: $color-secundario;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link,
+.navbar-nav .nav-link,
+li, p {
+    color: $color-secundario;
+    list-style: none;
+}
+
+header {
+    background-color: $color-terciario;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    a {
+        font-size: $fuente-media !important;
+    }
+}
+
+h1, h2, h4 {
+    color: $color-secundario;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: $espacio-chico;
+}
+
+footer {
+    background-color: $color-terciario;
+    font-size: 1.1rem;
+    @include flex-fila-start;
+    width: 100%;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+}
+

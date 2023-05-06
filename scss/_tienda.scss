@@ -1,0 +1,29 @@
+.productos {
+    @include flex-row;
+    margin-top: $espacio-grande;
+    margin-bottom: $espacio-grande;
+    gap: $espacio-medio;
+
+    .card {
+        @include flex-columna;
+        background-color: $color-card;
+        padding: 1rem;
+        width: 21rem;
+        border-radius: 20px;
+
+        img{
+            width: 18.75rem;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+
+        h4,p{
+            font-size: 1.5rem;
+        }
+
+        button {
+            @include button-size;
+        }
+
+    }
+}
