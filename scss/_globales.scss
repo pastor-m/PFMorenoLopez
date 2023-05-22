@@ -28,6 +28,9 @@ li, p {
 
 header {
     background-color: $color-terciario;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -35,6 +38,11 @@ header {
         font-size: $fuente-media !important;
     }
 
+}
+
+.logo {
+    width: 0.5rem;
+    padding-left: 1rem;
 }
 
 h1, h2, h4 {
